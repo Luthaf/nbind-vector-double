@@ -5,7 +5,6 @@
     "emcc-path": "emcc-path",
     "copyasm": "copyasm",
     "ndts": "ndts",
-
     "install": "autogypi --init-gyp -p nbind -s hello.cc && node-gyp configure build",
     "test": "node index.js"
   },

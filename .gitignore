@@ -1,0 +1,6 @@
+build
+node_modules
+*.gypi
+autogypi.json
+binding.gyp
+package-lock.json
