@@ -2,10 +2,16 @@ var assert = require('assert');
 var nbind = require('nbind');
 var lib = nbind.init().lib;
 
-var vec = lib.Vector.getVector();
+var floats = lib.Vector.floats();
+console.log(floats);
 
-console.log(vec);
+var doubles = lib.Vector.doubles();
+console.log(doubles);
 
-assert(vec[0] == 0.0);
-assert(vec[1] == 1.0);
-assert(vec[2] == 2.0);
+assert(floats[0] == 0.0);
+assert(floats[1] == 1.0);
+assert(floats[2] == 2.0);
+
+assert(doubles[0] == 0.0);
+assert(doubles[1] == 1.0);
+assert(doubles[2] == 2.0);
