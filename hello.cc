@@ -1,18 +1,13 @@
-#include <string>
-#include <iostream>
+#include <vector>
 
-struct Greeter {
-  static void sayHello(
-    std::string name
-  ) {
-    std::cout
-      << "Hello, "
-      << name << "!\n";
-  }
+struct Vector {
+    static std::vector<double> getVector() {
+        return {{0.0, 1.0, 2.0}};
+    }
 };
 
 #include "nbind/nbind.h"
 
-NBIND_CLASS(Greeter) {
-    method(sayHello);
+NBIND_CLASS(Vector) {
+    method(getVector);
 }
